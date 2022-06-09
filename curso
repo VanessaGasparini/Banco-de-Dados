@@ -1,1 +1,8 @@
 set ORACLE_SID=curso
+
+sqlplus sys/1234 as sysdba
+
+shutdown immediate
+
+startup
+
