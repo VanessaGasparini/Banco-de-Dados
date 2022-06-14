@@ -5,3 +5,5 @@ sqlplus sys/1234 as sysdba
 shutdown immediate
 
 startup
+
+ALTER USER "SYSTEM" IDENTIFIED BY "1234" ACCOUNT UNLOCK;
