@@ -62,4 +62,28 @@ INSERT INTO TCONTRATO VALUES(7, SYSDATE-2 ,5 ,445,20);
 
 
 
+--Inserir coluna na tabela
+ALTER TABLE TCONTRATO ADD COL_TESTE VARCHAR(50);
+
+
+SELECT * FROM TCONTRATO;
+
+ 
+--Excluir coluna da tabela
+ALTER TABLE TCONTRATO DROP COLUMN COL_TESTE;
+
+
+-- Alterar nome da coluna
+ALTER TABLE TALUNO RENAME COLUMN NOME TO NOME2;
+ALTER TABLE TALUNO RENAME COLUMN NOME2 TO NOME;
+
+--Clicar no nome da tabela e apertar F12 (vão aparecer as tabelas)
+
+
+SELECT * FROM TCONTRATO;
+
+
+
+--Excluir tabela
+
 
