@@ -103,3 +103,45 @@ VALUES (SEQ_ALUNO.NEXTVAL,'ANDRE','IVOTI','12000000');
 SELECT * FROM TALUNO;
 
 
+--Data/hora atual
+SELECT SYSDATE FROM DUAL;
+
+
+--Valor atual da sequence
+SELECT SEQ_ALUNO.CURRVAL FROM DUAL;
+
+
+--Confirmar alterações realizadas (insert, update e delete)
+COMMIT;
+
+
+--
+SELECT * FROM TALUNO;
+
+DELETE FROM TALUNO;
+
+--Desfaz alterações realizadas (insert, update, e delete)
+ROLLBACK;
+
+
+--Excluir registro da tabela
+SELECT * FROM TALUNO;
+
+DELETE FROM TALUNO
+WHERE COD_ALUNO = 5;
+
+SELECT * FROM TALUNO;
+
+ROLLBACK;
+
+SELECT * FROM TALUNO;
+
+SELECT * FROM TALUNO WHERE NOME = 'VALDO';
+
+DELETE FROM TALUNO WHERE NOME = 'VALDO';
+
+COMMIT;
+
+ROLLBACK;
+
+
