@@ -1,1 +1,14 @@
+--Comando SELECT Básico
 
+SELECT [DISTINCT] {* COLUMN [alias],...}
+FROM TABLE;
+
+--Selecionando todas as colunas
+
+SELECT *
+FROM TALUNO;
+
+--Selecionando colunas específicas
+
+SELECT COD_ALUNO, NOME
+FROM TALUNO;
